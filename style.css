@@ -1,0 +1,356 @@
+/* =========================================
+   VARIABLES / COLORES BASE
+========================================= */
+:root {
+  --color-fondo-pagina: #dce3f5;
+  --color-panel-izq: #e7ebf9;
+  --color-panel-der: #ffffff;
+  --color-azul-titulo: #16215c;
+  --color-azul-marca: #1d2a6b;
+  --color-azul-boton: #1c2a63;
+  --color-azul-boton-hover: #131d4a;
+  --color-texto-gris: #6b7280;
+  --color-texto-gris-claro: #9199a8;
+  --color-borde-input: #e1e5f0;
+  --color-amarillo-acento: #f2b544;
+  --color-azul-acento: #3b5bdb;
+  --sombra-suave: 0 15px 35px rgba(29, 42, 107, 0.08);
+  --sombra-card: 0 20px 45px rgba(29, 42, 107, 0.12);
+  --radio-grande: 28px;
+  --radio-mediano: 16px;
+  --radio-input: 10px;
+}
+
+/* =========================================
+   RESET BÁSICO
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-fondo-pagina);
+  color: var(--color-texto-gris);
+  line-height: 1.5;
+}
+
+/* =========================================
+   WRAPPER GENERAL
+========================================= */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 560px;
+  background-color: var(--color-panel-izq);
+  border-radius: var(--radio-grande);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+}
+
+/* =========================================
+   PANEL IZQUIERDO - BIENVENIDA
+========================================= */
+.welcome-panel {
+  flex: 1 1 50%;
+  padding: 45px 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.logo {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.welcome-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-azul-acento);
+  margin-bottom: 4px;
+}
+
+.brand-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-azul-marca);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.accent-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.accent-bar {
+  width: 34px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--color-amarillo-acento);
+}
+
+.accent-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-azul-acento);
+}
+
+.welcome-description {
+  font-size: 14.5px;
+  color: var(--color-texto-gris);
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.illustration-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================
+   PANEL DERECHO - FORMULARIO
+========================================= */
+.form-panel {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.form-card {
+  background-color: var(--color-panel-der);
+  width: 100%;
+  max-width: 400px;
+  padding: 45px 40px;
+  border-radius: var(--radio-mediano);
+  box-shadow: var(--sombra-card);
+  text-align: center;
+}
+
+.user-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #dbe2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.user-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-azul-titulo);
+  margin-bottom: 6px;
+}
+
+.form-subtitle {
+  font-size: 13.5px;
+  color: var(--color-texto-gris-claro);
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   FORMULARIO / INPUTS
+========================================= */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-borde-input);
+  border-radius: var(--radio-input);
+  padding: 0 14px;
+  height: 50px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group:focus-within {
+  border-color: var(--color-azul-acento);
+  box-shadow: 0 0 0 3px rgba(59, 91, 219, 0.12);
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.input-icon img,
+.input-icon-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.input-icon-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.form-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--color-azul-titulo);
+}
+
+.form-input::placeholder {
+  color: #a7adba;
+}
+
+/* =========================================
+   BOTÓN INGRESAR
+========================================= */
+.btn-submit {
+  margin-top: 10px;
+  height: 52px;
+  border: none;
+  border-radius: var(--radio-input);
+  background-color: var(--color-azul-boton);
+  color: #f8f8f8;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-azul-boton-hover);
+  transform: translateY(-1px);
+}
+
+.btn-arrow {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+@media (max-width: 900px) {
+  .login-container {
+    max-width: 640px;
+    flex-direction: column;
+  }
+
+  .welcome-panel {
+    padding: 40px 40px 20px;
+  }
+
+  .illustration {
+    min-height: 180px;
+  }
+
+  .form-panel {
+    padding: 20px 30px 40px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE - MÓVIL
+========================================= */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 0;
+  }
+
+  .login-container {
+    border-radius: 0;
+    min-height: 100vh;
+  }
+
+  .welcome-panel {
+    padding: 30px 24px 10px;
+  }
+
+  .brand-title {
+    font-size: 26px;
+  }
+
+  .welcome-description {
+    max-width: 100%;
+  }
+
+  .illustration {
+    min-height: 140px;
+  }
+
+  .illustration-img {
+    max-width: 260px;
+  }
+
+  .form-panel {
+    padding: 15px 20px 35px;
+  }
+
+  .form-card {
+    padding: 35px 24px;
+    box-shadow: none;
+  }
+}
