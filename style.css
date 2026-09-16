@@ -1,6 +1,6 @@
-/* =========================================
+/* 
    VARIABLES / COLORES BASE
-========================================= */
+ */
 :root {
   --color-fondo-pagina: #dce3f5;
   --color-panel-izq: #e7ebf9;
@@ -21,9 +21,9 @@
   --radio-input: 10px;
 }
 
-/* =========================================
+/* 
    RESET BÁSICO
-========================================= */
+ */
 * {
   margin: 0;
   padding: 0;
@@ -37,9 +37,9 @@ body {
   line-height: 1.5;
 }
 
-/* =========================================
+/* 
    WRAPPER GENERAL
-========================================= */
+ */
 .page-wrapper {
   min-height: 100vh;
   display: flex;
@@ -59,9 +59,9 @@ body {
   box-shadow: var(--sombra-suave);
 }
 
-/* =========================================
+/* 
    PANEL IZQUIERDO - BIENVENIDA
-========================================= */
+ */
 .welcome-panel {
   flex: 1 1 50%;
   padding: 45px 50px;
@@ -142,9 +142,9 @@ body {
   object-fit: contain;
 }
 
-/* =========================================
+/* 
    PANEL DERECHO - FORMULARIO
-========================================= */
+ */
 .form-panel {
   flex: 1 1 50%;
   display: flex;
@@ -193,9 +193,9 @@ body {
   margin-bottom: 30px;
 }
 
-/* =========================================
+/* 
    FORMULARIO / INPUTS
-========================================= */
+*/
 .login-form {
   display: flex;
   flex-direction: column;
@@ -259,9 +259,9 @@ body {
   color: #a7adba;
 }
 
-/* =========================================
+/* 
    BOTÓN INGRESAR
-========================================= */
+*/
 .btn-submit {
   margin-top: 10px;
   height: 52px;
@@ -290,9 +290,9 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* =========================================
+/* 
    RESPONSIVE - TABLET
-========================================= */
+ */
 @media (max-width: 900px) {
   .login-container {
     max-width: 640px;
@@ -312,9 +312,9 @@ body {
   }
 }
 
-/* =========================================
+/* 
    RESPONSIVE - MÓVIL
-========================================= */
+ */
 @media (max-width: 480px) {
   .page-wrapper {
     padding: 0;

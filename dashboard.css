@@ -1,6 +1,6 @@
-/* =========================================
+/* 
    VARIABLES / COLORES BASE
-========================================= */
+ */
 :root {
   --color-fondo-pagina: #eef1fb;
   --color-sidebar: #ffffff;
@@ -21,9 +21,9 @@
   --radio-chico: 12px;
 }
 
-/* =========================================
+/* 
    RESET BÁSICO
-========================================= */
+ */
 * {
   margin: 0;
   padding: 0;
@@ -42,9 +42,9 @@ a {
   color: inherit;
 }
 
-/* =========================================
+/* 
    WRAPPER GENERAL
-========================================= */
+ */
 .dashboard-wrapper {
   min-height: 100vh;
   display: flex;
@@ -54,9 +54,9 @@ a {
   margin: 0 auto;
 }
 
-/* =========================================
+/* 
    BARRA LATERAL
-========================================= */
+ */
 .sidebar {
   flex: 0 0 220px;
   background-color: var(--color-sidebar);
@@ -140,9 +140,9 @@ a {
   object-fit: contain;
 }
 
-/* =========================================
+/* 
    CONTENIDO PRINCIPAL
-========================================= */
+ */
 .main-content {
   flex: 1;
   display: flex;
@@ -171,11 +171,6 @@ a {
   padding: 0 40px;
 }
 
-.nav-icon {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) invert(1);
-}
 
 .nav-divider {
   width: 1px;
@@ -201,17 +196,6 @@ a {
   align-items: center;
   gap: 16px;
   z-index: 1;
-}
-
-.avatar-circle {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: #dbe1fb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
 }
 
 .avatar-circle img {
@@ -248,9 +232,9 @@ a {
   opacity: 0.9;
 }
 
-/* =========================================
+/* 
    TARJETAS
-========================================= */
+ */
 .cards-row {
   display: flex;
   gap: 20px;
@@ -276,16 +260,6 @@ a {
   background-color: var(--color-lavender-bg);
 }
 
-.card-icon {
-  flex-shrink: 0;
-  width: 54px;
-  height: 54px;
-  border-radius: var(--radio-chico);
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .card-icon img {
   width: 28px;
@@ -322,26 +296,15 @@ a {
   max-width: 220px;
 }
 
-.card-arrow {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  transition: transform 0.2s ease;
-}
+
 
 .card-arrow:hover {
   transform: translateX(3px);
 }
 
 .card-arrow img {
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  height: 35px;
 }
 
 .card-decoration {
@@ -366,9 +329,9 @@ a {
   padding: 26px 30px;
 }
 
-/* =========================================
+/* 
    ÍCONOS INFERIORES
-========================================= */
+ */
 .footer-icons {
   display: flex;
   justify-content: flex-end;
@@ -392,9 +355,9 @@ a {
   object-fit: contain;
 }
 
-/* =========================================
+/* 
    RESPONSIVE - TABLET
-========================================= */
+ */
 @media (max-width: 900px) {
   .dashboard-wrapper {
     flex-direction: column;
@@ -439,9 +402,9 @@ a {
   }
 }
 
-/* =========================================
+/* 
    RESPONSIVE - MÓVIL
-========================================= */
+ */
 @media (max-width: 480px) {
   .dashboard-wrapper {
     padding: 10px;
